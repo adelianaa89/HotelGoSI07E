@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <link rel="stylesheet" href="beranda.css">
+</head>
+<body>
+
+    <!-- Beranda 1 -->    
+    <section class="beranda1">
+        <nav class="navbar">
+            <ul>
+                <p>ROOMS</p>
+                <p>OUR SERVICES</p>
+                <p>AMENITIES</p>
+                <p>GALLERY</p>
+                <p>CONTACTS</p>
+                <p>ABOUT US</p>
+                <p>FAQ</p>
+                <p>LOGIN</p>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>EXPERIENCE</h1>
+            <h2>A VACATION WITH CLASS</h2>
+            <p>YOU DESERVE IT!</p>
+        </div>
+        <div class="booking-form">
+            <input type="text" placeholder="Hotel, City">
+            <input type="text" placeholder="Check in - out">
+            <input type="text" placeholder="Persons">
+            <button>Check</button>
+        </div>
+    </section>
+    
+    <!-- Beranda 2 -->
+    <section class="destinations">
+        <h2>Explore More Destination</h2>
+        <div class="container">
+            <main class="grid">
+                <article>
+                    <img src="gambar keperluan web HOTEL GO/image 2.jpg" width="250px" height="250px">
+                    <div class="konten">
+                        <h2> Roynet Hotel </h2>
+                        <p> Mapo-gu, Seoul, South Korea </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="gambar keperluan web HOTEL GO/image 6.jpg" width="250px" height="250px">
+                    <div class="konten">
+                        <h2> The Berkeley Hotel </h2>
+                        <p> Bangkok, Thailand </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="gambar keperluan web HOTEL GO/image 7.jpg" width="250px" height="250px">
+                    <div class="konten">
+                         <h2> Shangri La Hotel </h2>
+                        <p> London, UK </p>
+                    </div>
+                </article>
+                <article>
+                     <img src="gambar keperluan web HOTEL GO/image 4.jpg" width="250px" height="250px">
+                     <div class="konten">
+                        <h2> Ecozy Dijiwa Hotel </h2>
+                        <p> Bali, Indonesia </p>
+                     </div>
+                </article>
+                <article>
+                    <img src="gambar keperluan web HOTEL GO/image 3.jpg" width="250px" height="250px">
+                    <div class="konten">
+                        <h2> Grand Prince Hotel </h2>
+                        <p> Tokyo, Japan </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="gambar keperluan web HOTEL GO/image 9.jpg" width="250px" height="250px">
+                    <div class="konten">
+                        <h2> Chateau de Briancon </h2>
+                        <p> Baune, France </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="gambar keperluan web HOTEL GO/image 8.jpg" width="250px" height="250px">
+                    <div class="konten">
+                        <h2> Bohol Coastal Hotel </h2>
+                        <p> Tawala, Filipine </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="gambar keperluan web HOTEL GO/image 5.jpg" width="250px" height="250px">
+                    <div class="konten">
+                        <h2> Rezel Select Hotel </h2>
+                        <p> Huadu, China </p>
+                    </div>
+                </article>         
+        </div>
+    </section>
+
+    <!--Form Login dan Register-->
+
+    <section>
+        <a href="#" onclick="showModal()">LOGIN</a>
+        <div id="authModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Login / Register</h2>
+                <form action="dashboard.php" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required>
+                    
+                    <label>
+                        <input type="radio" name="auth_type" value="login" checked> Login
+                    </label>
+                    <label>
+                        <input type="radio" name="auth_type" value="register"> Register
+                    </label>
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showModal() {
+            document.getElementById('authModal').style.display = 'block';
+        }
+        
+        function closeModal() {
+            document.getElementById('authModal').style.display = 'none';
+        }
+    </script>
+        
+</body>
+</html>
