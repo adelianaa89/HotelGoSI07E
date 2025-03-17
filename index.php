@@ -45,16 +45,6 @@
         </div>
     </section>
 
-    <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-        <img src="images/hotel1.jpg" alt="Hotel View">
-        <img src="images/room2.png" alt="Room Interior">
-        <img src="images/swimming_pool.jpeg" alt="Swimming Pool">
-        <img src="images/lobby_view.gif" alt="Lobby View">
-    </div>
-   </section>
-     
 <body>
         <section class="team-section">
         <h2 class="team-title">Our Team</h2>
